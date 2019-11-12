@@ -1,0 +1,22 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+.task-card {
+  font-family: Roboto;
+  margin: 0% 2%;
+  display: flex;
+  h3, p {
+    padding: 0;
+    margin: 1px;
+  }
+}
+
+
+.detail-link {
+    text-decoration: none;
+    padding-top: 50px;
+    margin: 1px;
+  }

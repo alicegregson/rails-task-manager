@@ -1,0 +1,18 @@
+<h1>Individual Task</h1>
+<h2><%= @task.title %></h1>
+<h2><%= @task.details %></h2>
+<% if @task.completed %>
+<h3>Status:</h3>
+<p><i class="fas fa-check-square"></i></p>
+<% else %>
+<p><i class="far fa-square"></i></p>
+<% end %>
+<h3><%= link_to "Back to homepage", tasks_path %></h3>
+<h3><%= link_to "Edit", edit_task_path(@task) %></h3>
+<!-- edit_task = prefix for the edit route in routes.rb -->
+<h3><%= link_to "Delete", task_path(@task), method: :delete %></h3>
+
+<!-- if you need a specific task, you have to call @task as a parameter -->
+<!-- to create a link - look at the URL you want to generate in 'rails routes' in the terminal -->
+
+

@@ -6,10 +6,16 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application' %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   </head>
 
   <body>
     <%= yield %>
   </body>
 </html>
+
+
+<!-- undefined method `javascript_pack_tag' for #<#<Class:0x00007fca13e9dab0>:0x00007fca13ea7e98>
+Did you mean?  javascript_path
+               javascript_tag -->
